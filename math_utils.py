@@ -20,8 +20,8 @@ def almost_equal(a, b, eps) -> bool:
     1. almost_equal(1, 1.001, 0.001) --> True
     2. almost_equal(1, 1.001, 0.0001) --> False
     """
-    if type(a) is str:
-        print('Your input must not be string!!!!')
+    if type(a) is str or type(b) is str:
+        print('Your inputs must not be string!!!!')
     abs_diff = abs(a-b)
     if abs_diff <= eps:
         return True
