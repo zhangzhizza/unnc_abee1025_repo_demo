@@ -27,3 +27,9 @@ def almost_equal(a, b, eps) -> bool:
         return True
     else:
         return False
+
+def abs1(a):
+    if a >= 0:
+        return a
+    else:
+        return -a
